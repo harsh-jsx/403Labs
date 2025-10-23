@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2em;
+  padding: 1rem;
   background: transparent;
   pointer-events: none;
   z-index: 20;
@@ -331,15 +331,16 @@
   opacity: var(--sm-num-opacity, 0);
 }
 
+/* Logo inversion when menu is open - applies to all screen sizes */
+.staggered-menu-wrapper[data-open] .sm-logo-img {
+  filter: invert(100%);
+}
+
 @media (max-width: 1024px) {
   .staggered-menu-panel {
     width: 100%;
     left: 0;
     right: 0;
-  }
-
-  .staggered-menu-wrapper[data-open] .sm-logo-img {
-    filter: invert(100%);
   }
 }
 
@@ -348,10 +349,6 @@
     width: 100%;
     left: 0;
     right: 0;
-  }
-
-  .staggered-menu-wrapper[data-open] .sm-logo-img {
-    filter: invert(100%);
   }
 }
 .sm-panel-itemWrap {

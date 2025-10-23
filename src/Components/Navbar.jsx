@@ -32,7 +32,7 @@ export const Navbar = ({
   displaySocials = true,
   displayItemNumbering = true,
   className,
-  logoUrl = "/src/assets/logos/reactbits-gh-white.svg",
+  logoUrl = "/public/image (1).png",
   menuButtonColor = "#fff",
   openMenuButtonColor = "#fff",
   accentColor = "#5227FF",
@@ -407,12 +407,15 @@ export const Navbar = ({
       >
         <div className="sm-logo" aria-label="Logo">
           <img
-            src={logoUrl || "/src/assets/logos/reactbits-gh-white.svg"}
+            src={logoUrl || "/public/image (1).png"}
             alt="Logo"
             className="sm-logo-img"
             draggable={false}
-            width={110}
-            height={24}
+            style={{
+              height: "200px",
+              width: "30%",
+              objectFit: "contain",
+            }}
           />
         </div>
         <button
