@@ -1,0 +1,5 @@
+{
+  "account_sid": "your_twilio_account_sid_here",
+  "auth_token": "your_twilio_auth_token_here",
+  "phone_number": "+1234567890"
+}
