@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { useRef, useLayoutEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "./scrollTrigger";
-
+import { BentoGrid, BentoCard } from "./BentoGrid";
 const Home = () => {
   gsap.registerPlugin(useGSAP, ScrollTrigger);
   const titleRef = useRef(null);
@@ -90,10 +90,8 @@ const Home = () => {
         <ScrollReveal
           baseOpacity={0}
           enableBlur={true}
-          baseRotation={3}
           blurStrength={8}
-          rotationEnd="top 25%"
-          wordAnimationEnd="top 25%"
+          textClassName="text-6xl font-medium "
         >
           For those who think beyond and think in the power of technology, Hi
           there! We are 403labs, an Innovation and Technology Company.
